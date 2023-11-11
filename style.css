@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+}
+
+/*------------------- HEADER -------------------*/
+header {
+  height: 108vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(Assets/cover.jpg);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 48px;
+  margin: 0 8%;
+}
+.logo {
+  height: 3.1rem;
+  width: 10rem;
+}
+.right-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-left: auto;
+  position: relative;
+  right: 3px;
+  bottom: 3px;
+}
+.language-btn {
+  background-image: url(Assets/translate-2.svg);
+  background-size: 13%;
+  background-repeat: no-repeat;
+  background-position: 10%;
+  height: 32px;
+  width: 120px;
+  background-color: rgba(20, 18, 18, 0.8);
+  color: white;
+  padding: 4px 12px 4px 29px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  font-size: 15px;
+}
+.language-btn:focus {
+  border: 3px solid #2d2d2d;
+  outline: 2px solid white;
+}
+.sign-in-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 76px;
+  padding: 3px 9px;
+  background-color: rgb(218, 19, 19);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.sign-in-btn:hover {
+  background-color: rgb(182, 17, 17);
+}
+.sign-in-btn:focus {
+  border: 1px solid #2d2d2d;
+  outline: 2px solid white;
+}
+
+/*------------------- Header Content -------------------*/
+.header-content {
+  height: 175px;
+  width: 66rem;
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.header-content h1 {
+  font-size: 2.8em;
+  font-weight: 900;
+}
+.header-content p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 1.3rem;
+}
+.email-signup {
+  margin-top: 1.9rem;
+}
+.email-signup h3 {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.email-signup div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.9rem;
+  gap: 10px;
+}
+.email-signup input {
+  background-color: rgba(20, 18, 18, 0.8);
+  color: white;
+  border: 1px solid rgb(100, 99, 99);
+  border-radius: 4px;
+  height: 58px;
+  width: 36%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  outline: 2px white;
+}
+.email-signup input:focus {
+  border: 2px groove #2d2d2d;
+  outline: 2px solid white;
+}
+.email-signup input::placeholder {
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+  transform: scaleY(1);
+  color: rgb(192, 182, 182);
+}
+.email-signup input:focus::placeholder {
+  transform: translateY(-140%);
+  font-size: 0.7rem;
+}
+.email-signup button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgb(218, 19, 19);
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  width: 19%;
+  height: 55px;
+  padding-left: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.email-signup button ion-icon {
+  padding: 0 0px 1px 7px;
+  font-size: 1.7rem;
+}
+.email-signup button:focus {
+  border: 2px solid #2d2d2d;
+  outline: 2px solid white;
+}
+.email-signup button:hover {
+  background-color: rgb(182, 17, 17);
+}
+.divider {
+  width: 100%;
+  height: 0.5rem;
+  background-color: rgb(35, 35, 35);
+}
+
+/*------------------- FEATURES SECTION -------------------*/
+section {
+  font-size: 23px;
+}
+.features {
+  display: flex;
+  height: 80vh;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5% 12%;
+}
+.features-text {
+  flex-basis: 50%;
+}
+.features-img {
+  flex-basis: 50%;
+}
+.features h2 {
+  font-size: 44px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.features-img img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+/*------------------- FAQ -------------------*/
+.faq {
+  padding: 4% 12%;
+}
+.faq-h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  padding: 24px;
+}
+.accordion {
+  background-color: #2d2d2d;
+  color: white;
+  cursor: pointer;
+  padding: 13px 24px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  font-size: 24px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.4s;
+}
+.accordion:focus {
+  border: 2px groove #2d2d2d;
+  outline: 2px solid white;
+  transition: none;
+}
+.accordion:hover {
+  background-color: rgb(66, 64, 64);
+}
+.accordion:after {
+  content: "+";
+  font-size: 3.2rem;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "+";
+  transform: rotate(135deg);
+}
+.panel {
+  padding: 24px;
+  font-size: 24px;
+  background-color: #2d2d2d;
+  margin-top: -7px;
+  margin-bottom: 8px;
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+
+.faq .email-signup {
+  margin-top: 4%;
+  margin-bottom: 1.8%;
+}
+
+/*------------------- FOOTER SECTION -------------------*/
+footer {
+  margin: 5% 12%;
+  color: rgba(255, 255, 255, 0.7);
+}
+.first-para {
+  margin-bottom: 1.3%;
+}
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 1%;
+  font-size: 14px;
+}
+footer li {
+  list-style-type: none;
+  flex-basis: 25%;
+  margin-bottom: 1.8%;
+}
+footer a {
+  color: rgba(255, 255, 255, 0.7);
+}
+footer a:focus {
+  padding: 2px;
+  border-radius: 2px;
+  outline: 2px solid white;
+}
+.footer-lang-btn {
+  margin-top: 1%;
+}
+.copyright-text {
+  margin-top: 1.5rem;
+  font-size: 14px;
+}
