@@ -468,3 +468,9 @@ footer a:focus {
     font-size: 12px;
   }
 }
+
+@media (orientation: landscape) {
+  header {
+    min-height: 112vh;
+  }
+}
